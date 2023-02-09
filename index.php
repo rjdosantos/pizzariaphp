@@ -8,25 +8,33 @@
  <div id="main-container">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 my-4">
-        <h2 class="my-5 text-center">Monte a pizza como desejar</h2>
+      <div class="col-md-12">
+        <h2 class="text-center mb-5">Monte a pizza como desejar</h2>
         <form action="process/pizza.php" method="POST" id="pizza-form">
           <div class="form-group mb-3">
             <label for="borda">Borda:</label>
             <select name="borda" id="borda" class="form-control">
               <option value="">Selecione a borda</option>
+              <?php foreach($bordas as $borda) : ?>
+                <option value="<?= $borda["id_borda"]; ?>"><?= $borda["tipo"]; ?></option>
+              <?php endforeach; ?>
             </select>
           </div>
           <div class="form-group mb-3">
             <label for="massa">Massa:</label>
             <select name="massa" id="massa" class="form-control">
               <option value="">Selecione a Massa</option>
+              <?php foreach($massas as $massa) : ?>
+                <option value="<?= $massa["id_massa"]; ?>"><?= $massa["tipo"]; ?></option>
+              <?php endforeach; ?>
             </select>
           </div>
           <div class="form-group mb-3">
             <label for="sabores">Sabores: (Máximo: 3)</label>
             <select multiple name="sabores[]" id="sabores" class="form-control">
-              
+            <?php foreach($sabores as $sabor) : ?>
+                <option value="<?= $sabor["id_sabores"]; ?>"><?= $sabor["nome"]; ?></option>
+              <?php endforeach; ?>
             </select>
           </div>
           <div class="form-group">

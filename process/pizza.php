@@ -1,4 +1,3 @@
-<pre>
 <?php 
   include_once("conn.php");
 
@@ -18,12 +17,12 @@
     $sabores = $saboresQuery->fetchAll();
 
 
-    print_r($sabores);
-
   } else {
     // Criação do pedido
     if ($method === "POST" ) {
-
+      $data = $_POST;
+      echo "<pre>";
+     print_r( $data);
     }
   }
 ?>
