@@ -12,7 +12,7 @@ p {
 }
 
 .navbar-expand-lg {
-  background-color: #000 !important;
+  background-color: #DA291C !important;
 }
 
 /* HOME */
@@ -32,7 +32,7 @@ p {
 
 #main-banner h1 {
   color: #FFF;
-  background-color: #000;
+  background-color: #DA291C;
   padding: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -79,7 +79,7 @@ footer {
   position: relative;
   width: 100%;
   height: 90px;
-  background-color: #000;
+  background-color: #DA291C;
   color: #fff;
   display: flex;
   align-items: center;
