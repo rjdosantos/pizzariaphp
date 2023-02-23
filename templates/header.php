@@ -46,6 +46,9 @@
             <li class="nav-item">
               <a class="nav-link active text-light" aria-current="page" href="#">Peça sua Pizza</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="dashboard.php">Painel</a>
+            </li>
           </ul>
         </div>
       </div>
